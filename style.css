@@ -119,10 +119,7 @@ tr:last-of-type td{
     color: hsl(30, 10%, 34%);
 }
 
-a {
-    text-decoration: none;
-    color: darkorchid;
-}
+
 
 
 @media (max-width: 500px) {
