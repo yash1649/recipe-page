@@ -1,0 +1,145 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:hsl(30, 54%, 90%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    color: gray;
+    margin: 0;
+}
+
+.recipe-page {
+    margin: 100px 0;
+    width: 100%;
+    max-width: 630px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.omelette-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1 {
+    color: hsl(24, 5%, 18%);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.para {
+    font-size: 16px;
+}
+
+.prep-time {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color:hsl(330, 100%, 98%);
+}
+
+.prep-time h2 {
+    color: hsl(332, 51%, 32%);
+    font-size: 20px;
+}
+.prep-time li,.ingredient li, .nutrition li {
+    list-style-type: none;
+    margin-bottom: 8px;
+
+}
+li::before {
+    content: "\002022";
+    color : hsl(14, 45%, 36%);
+    padding-right: 20px;
+}
+
+
+.ingredient {
+    padding-bottom: 20px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+
+}
+span {
+    font-weight: bold;
+    color:   hsl(30, 10%, 34%);
+}
+
+.instructions h2, .ingredient h2, .nutrition h2 {
+    color:  hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+
+.instructions {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-bottom: 20px;
+}
+
+ol {
+    padding: 16px;
+}
+.instructions li {
+    margin-bottom: 8px;
+}
+.instructions ul li::marker {
+    color: hsl(14, 45%, 36%) ;
+    
+}
+.instructions li::before {
+    content: none;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 10px 20px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+tr:last-of-type td{
+    border-bottom: 0;
+}
+
+.cals {
+    color: hsl(30, 10%, 34%);
+}
+
+a {
+    text-decoration: none;
+    color: darkorchid;
+}
+
+
+@media (max-width: 500px) {
+    .recipe-page {
+       width: 100%;
+       margin: 0;
+       padding: 0;
+       border-radius: 0;
+    }
+    .omelette-img{
+        border-radius: 0;
+    }
+    
+    h1,.solo-para, .prep-time, .ingredient, .instructions, .nutrition
+    {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+}
